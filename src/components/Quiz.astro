@@ -1,0 +1,119 @@
+---
+export interface Props {
+  questions: {
+    q: string;
+    options: string[];
+    answer: string;
+  }[];
+}
+const { questions } = Astro.props;
+---
+
+<quiz-component data-questions={JSON.stringify(questions)}>
+  <div class="quiz-container" style="padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; background-color: white;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; font-size: 0.875rem; color: #6b7280;">
+      <span class="question-count"></span>
+      <span class="score-display"></span>
+    </div>
+    <h3 class="question-text" style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;"></h3>
+    <div class="options-container" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
+  </div>
+  
+  <div class="result-container" style="display: none; padding: 1.5rem; background-color: #f3f4f6; border-radius: 0.5rem; text-align: center;">
+    <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Quiz Completed!</h3>
+    <p class="final-score" style="font-size: 1.25rem; margin-bottom: 1rem;"></p>
+    <button class="restart-btn" style="padding: 0.5rem 1rem; background-color: #3b82f6; color: white; border-radius: 0.25rem; border: none; cursor: pointer;">
+      Restart Quiz
+    </button>
+  </div>
+</quiz-component>
+
+<script>
+  class QuizComponent extends HTMLElement {
+    connectedCallback() {
+      this.questions = JSON.parse(this.dataset.questions || '[]');
+      this.currentQuestion = 0;
+      this.score = 0;
+      
+      this.quizContainer = this.querySelector('.quiz-container');
+      this.questionText = this.querySelector('.question-text');
+      this.optionsContainer = this.querySelector('.options-container');
+      this.questionCount = this.querySelector('.question-count');
+      this.scoreDisplay = this.querySelector('.score-display');
+      this.resultContainer = this.querySelector('.result-container');
+      this.restartBtn = this.querySelector('.restart-btn');
+      
+      this.restartBtn?.addEventListener('click', () => this.restart());
+      
+      this.renderQuestion();
+    }
+    
+    renderQuestion() {
+      const q = this.questions[this.currentQuestion];
+      if (!q) return;
+
+      this.questionText.textContent = q.q;
+      this.questionCount.textContent = `Question ${this.currentQuestion + 1} of ${this.questions.length}`;
+      this.scoreDisplay.textContent = `Score: ${this.score}`;
+      
+      this.optionsContainer.innerHTML = '';
+      this.quizContainer.style.display = 'block';
+      this.resultContainer.style.display = 'none';
+      
+      q.options.forEach(option => {
+        const btn = document.createElement('button');
+        btn.textContent = option;
+        btn.style.cssText = "width: 100%; text-align: left; padding: 0.75rem 1rem; border: 1px solid #d1d5db; border-radius: 0.25rem; background-color: #f9fafb; cursor: pointer; transition: all 0.2s;";
+        
+        btn.addEventListener('click', () => this.handleAnswer(btn, option, q.answer));
+        this.optionsContainer.appendChild(btn);
+      });
+    }
+    
+    handleAnswer(btn, option, answer) {
+      const allBtns = this.optionsContainer.querySelectorAll('button');
+      allBtns.forEach(b => {
+        b.disabled = true;
+        b.style.cursor = "default";
+        if (b.textContent === answer) {
+           b.style.backgroundColor = "#dcfce7";
+           b.style.borderColor = "#22c55e";
+           b.style.color = "#166534";
+        }
+      });
+      
+      const isCorrect = option === answer;
+      if (isCorrect) {
+        this.score++;
+        this.scoreDisplay.textContent = `Score: ${this.score}`;
+      } else {
+        btn.style.backgroundColor = "#fee2e2";
+        btn.style.borderColor = "#ef4444";
+        btn.style.color = "#991b1b";
+      }
+      
+      setTimeout(() => {
+        this.currentQuestion++;
+        if (this.currentQuestion < this.questions.length) {
+          this.renderQuestion();
+        } else {
+          this.showResult();
+        }
+      }, 1500);
+    }
+    
+    showResult() {
+      this.quizContainer.style.display = 'none';
+      this.resultContainer.style.display = 'block';
+      this.querySelector('.final-score').textContent = `Your score: ${this.score} out of ${this.questions.length}`;
+    }
+    
+    restart() {
+      this.currentQuestion = 0;
+      this.score = 0;
+      this.renderQuestion();
+    }
+  }
+  
+  customElements.define('quiz-component', QuizComponent);
+</script>
