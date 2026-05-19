@@ -1,0 +1,34 @@
+---
+title: "Python Cadenas"
+description: "Operaciones"
+pubDate: "May 15 2026"
+heroImage: ""
+---
+
+import Quiz from '../../components/Quiz.astro';
+
+## Descripcion
+
+Las cadenas en Python o strings son un tipo inmutable que permite almacenar secuencias de caracteres. Para crear una, es necesario incluir el texto entre comillas dobles. Puedes obtener más ayuda con el comando help(str).
+
+```python
+s = "Esto es una cadena"
+print(s)       #Esto es una cadena
+print(type(s)) #<class 'str'>
+```
+
+## Preguntas
+
+<Quiz questions={[
+  { 
+    q: "Que realiza la funcion help?", 
+    options: ["solo muesta cadena 1","muestra informacion de ayuda"], 
+    answer: "muestra informacion de ayuda" 
+  },
+  { 
+    q: "Que es una cadena?", 
+    options: ["es un numero","es una palabra"], 
+    answer: "es una palabra" 
+  }
+]} />
+
