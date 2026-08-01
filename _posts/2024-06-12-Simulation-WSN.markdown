@@ -4,7 +4,7 @@ subtitle: "Automatizando la generación de contenido"
 author: "Lib"
 avatar: "img/authors/wferr.png"
 image: "img/n8n.jpeg"
-date: 2026-07-31 08:30:00
+date: 2026-07-31
 ---
 
 ### Description
