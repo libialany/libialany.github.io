@@ -1,0 +1,4 @@
+- [Referencia](reference/README)
+  - [Comandos útiles](reference/comandos)
+  - [Solución de problemas](reference/troubleshooting)
+  - [Glosario TrueNAS/ZFS](reference/glosario)
