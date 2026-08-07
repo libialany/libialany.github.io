@@ -1,9 +1,0 @@
-plugins:
-  - jekyll-feed
-# Site settings
-title: Libia Projects 
-description: I love the Silence 
-keywords: intensive, weird, more weird
-author: LibLook
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
