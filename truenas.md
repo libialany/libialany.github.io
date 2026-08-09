@@ -6,3 +6,10 @@ Curso práctico de TrueNAS donde aprenderás los fundamentos del sistema de alma
 
 - [Nivel 1 - Fundamentos](nivel1/README)
 - [Nivel 2 - Administración de servicios](nivel2/README)
+
+
+## Finalizar 
+
+Se daran certificados al finalizar el curso.
+
+![Certificado](img/certificate.png)

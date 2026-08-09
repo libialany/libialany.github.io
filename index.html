@@ -13,6 +13,13 @@
   <!-- Core Theme (see https://docsify.js.org/#/themes) -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
 
+  <!-- Prevent sidebar collapse on click -->
+  <style>
+    .sidebar-nav li.collapse > ul {
+      display: block !important; /* prevents children from hiding on toggle */
+    }
+  </style>
+
 </head>
 
 <body>
