@@ -6,23 +6,23 @@ En este ejercicio se explorará la ejecución de aplicaciones en TrueNAS mediant
 
 ### Apps
 
-![app](part3/1.jpg)
+![app](part3/1.png)
 
 ### Descripcion de la aplicacion
 
-![app](part3/2.jpg)
+![app](part3/2.png)
 
 ### Seleccionar Pool
 
-![app](part3/3.jpg)
+![app](part3/3.png)
 
 ### Panel de aplicaciones
 
-![app](part3/4.jpg)
+![app](part3/4.png)
 
 ### Probar la Aplicacion de LDAP
 
-![app](part3/5.jpg)
+![app](part3/5.png)
 
 
 **Referencias:**

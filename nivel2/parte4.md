@@ -6,19 +6,19 @@ En este ejercicio se configurarán servicios de compartición de archivos utiliz
 
 ### Panel para compartir
 
-![configuracion_1](part1/11.jpg)
+![configuracion_1](part1/11.png)
 
 ### Configurar la carpeta a comparti
 
-![configuracion_2](part1/12.jpg)
+![configuracion_2](part1/12.png)
 
 ### Estatus
 
-![configuracion_3](part1/13.jpg)
+![configuracion_3](part1/13.png)
 
 ### Permitir a usuario 
 
-![configuracion_4](part1/14.jpg)
+![configuracion_4](part1/14.png)
 
 
 **Referencias:**
