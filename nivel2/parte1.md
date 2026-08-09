@@ -4,6 +4,23 @@
 
 En este ejercicio se configurarán servicios de compartición de archivos utilizando los protocolos **SMB (Windows)** y **NFS (Linux/Unix)**. Los participantes aprenderán a crear recursos compartidos, aplicar permisos y conectar clientes externos al almacenamiento TrueNAS.
 
+### Panel para compartir
+
+![configuracion_1](part1/11.jpg)
+
+### Configurar la carpeta a comparti
+
+![configuracion_2](part1/12.jpg)
+
+### Estatus
+
+![configuracion_3](part1/13.jpg)
+
+### Permitir a usuario 
+
+![configuracion_4](part1/14.jpg)
+
+
 **Referencias:**
 
 1. Configuración de recursos compartidos SMB en TrueNAS:

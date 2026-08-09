@@ -8,8 +8,3 @@
     - [Parte 4 - Uso compartido SMB/NFS](nivel2/parte4)
     - [Parte 5 - Instantáneas y replicación](nivel2/parte5)
     - [Parte 6 - Aplicaciones y contenedores](nivel2/parte6)
-
-- [Referencia](reference/README)
-  - [Comandos útiles](reference/comandos)
-  - [Solución de problemas](reference/troubleshooting)
-  - [Glosario TrueNAS/ZFS](reference/glosario)
