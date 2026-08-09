@@ -4,6 +4,6 @@ En este nivel se aprenderá a configurar y administrar los principales servicios
 
 ## Temas
 
-- [Uso compartido SMB/NFS](./parte1.md)
-- [Instantáneas y replicación](./parte2.md)
-- [Aplicaciones y contenedores](./parte3.md)
+- [Uso compartido SMB/NFS](parte4.md)
+- [Instantáneas y replicación](parte5.md)
+- [Aplicaciones y contenedores](parte6.md)
