@@ -16,6 +16,8 @@ Estos datos se almacenan en tres tipos de medios:
 * **Ópticos:** Los medios ópticos incluyen discos compactos (CD, CD-ROM, CD-R, CD-RW), discos versátiles digitales (DVD, DVD+R, DVD-R, DVD-RAM, DVD+RW, DVD-RW), discos de una sola escritura y múltiples lecturas (WORM), discos DVD de alta definición (Blu-ray y HD-DVD), tarjetas inteligentes y cintas ópticas.
 * **De estado sólido:** Tarjetas de memoria flash, unidades USB Flash y discos duros de estado sólido (SSD).
 
+![Media file format storage](https://cdn.nexternal.com/cintrex/images/Consumer-Video-Tape-Types1.png)
+
 ### Buenas prácticas al guardar
 
 Estos son los primeros pasos:
