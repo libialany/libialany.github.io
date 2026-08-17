@@ -12,11 +12,7 @@ En este ejercicio se aprenderán los conceptos fundamentales del almacenamiento 
 
 ### Pool (agrupación o pool)
 
-Un volumen de ZFS se denomina **pool**. A algunas personas les gusta añadir innecesariamente el carácter «z» al principio de los sustantivos relacionados con ZFS que no comienzan con «z». Es simplemente un pool; ahórrate tiempo y no digas «mi zpool».
-
-Un pool contiene uno o más **vdevs**, abreviatura de *virtual device* (dispositivo virtual), y los datos se distribuyen (*striping*) entre ellos. Esto significa que los datos no se superponen entre los vdevs y que la pérdida de un solo vdev implica pérdida de datos. En otras palabras, si se pierde un vdev, el pool falla.
-
-Por lo tanto, es necesario garantizar que ningún vdev falle. Dicho de otra manera, **ZFS implementa la redundancia en la capa de los vdevs**⁵.
+Un volumen de ZFS se denomina **pool**. Un pool contiene uno o más **vdevs**, abreviatura de *virtual device* (dispositivo virtual) [puedes revisar en el anterior capitulo](https://libialany.github.io/#/nivel1/parte1)
 
 ### Datasets (conjuntos de datos)
 
