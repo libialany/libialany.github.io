@@ -6,13 +6,17 @@ En este ejercicio se aprenderán los conceptos fundamentales del almacenamiento 
 
 ![Creación de pool](part2/1.png)
 
-![Configuración de vdevs](part2/2.png)
 
-![Propiedades de ZFS](part2/3.png)
 
 ### Pool (agrupación o pool)
 
 Un volumen de ZFS se denomina **pool**. Un pool contiene uno o más **vdevs**, abreviatura de *virtual device* (dispositivo virtual) [puedes revisar en el anterior capitulo](https://libialany.github.io/#/nivel1/parte1)
+
+<img width="625" height="395" alt="image" src="https://github.com/user-attachments/assets/507f8c8d-4612-4040-8a6c-311b75a618bd" />
+
+
+![Configuración de vdevs](part2/2.png)
+
 
 ### Datasets (conjuntos de datos)
 
@@ -21,6 +25,9 @@ Un **dataset** es un sistema de archivos de ZFS. Puede verse como una construcci
 Cada pool de ZFS tiene un dataset de nivel superior, cuyo nombre es el mismo que el del pool. A partir de ahí, se puede crear un número arbitrario de datasets como hijos de un dataset existente. Los datasets suelen ser la unidad de administración; es decir, **las propiedades de ZFS se aplican a los datasets**. Estas propiedades incluyen características como compresión, sumas de comprobación (*checksums*), cuotas y reservas⁶. Las instantáneas (*snapshots*) y la replicación de ZFS, explicadas más adelante, también funcionan sobre datasets completos.
 
 La regla general es utilizar **datasets en lugar de simples directorios** para los datos que se gestionan de forma diferente: distinto propietario, diferente programación de snapshots, diferente compresión, diferente cuota, etc. En caso de duda, normalmente es mejor utilizar más datasets que menos.
+
+
+![Propiedades de ZFS](part2/3.png)
 
 <img width="339" height="404" alt="image" src="https://github.com/user-attachments/assets/a8cce3e4-ff8b-45b7-b237-9f679aa47bc9" />
 
