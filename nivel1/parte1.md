@@ -54,6 +54,8 @@ El **pool** formado de varios discos. En vez de formatear cada disco por separad
 ### 2. Vdev (Dispositivo Virtual)
 Un pool no está hecho directamente de discos está hecho de **vdevs** (dispositivos virtuales). Un vdev es un grupo de uno o más discos físicos que se comportan como una sola unidad dentro del pool.
 
+<img width="553" height="159" alt="image" src="https://github.com/user-attachments/assets/71d76ed5-552e-4c5c-8dce-7f8951bbab67" />
+
 Tipos de vdev
 
 #### Vdev de disco único (Single Disk)
