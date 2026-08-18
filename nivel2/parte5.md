@@ -6,10 +6,10 @@ En este ejercicio se implementará una estrategia de protección de datos utiliz
 
 ### Configurar Replicacion
 
-<img width="476" height="513" alt="image" src="https://github.com/user-attachments/assets/5341c22c-575c-47d9-893e-7f8d0a1dd5ed" />
+<img width="484" height="515" alt="image" src="https://github.com/user-attachments/assets/770e9c66-d57b-4be2-ba9f-543ab75cfdee" />
 
+<img width="508" height="512" alt="image" src="https://github.com/user-attachments/assets/e795b4c2-4880-485b-a659-f75395be06ca" />
 
-![configuracion_replicaion](part2/1.jpg)
 
 **Referencias:**
 
