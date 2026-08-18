@@ -22,6 +22,15 @@ Cada pool de ZFS tiene un dataset de nivel superior, cuyo nombre es el mismo que
 
 La regla general es utilizar **datasets en lugar de simples directorios** para los datos que se gestionan de forma diferente: distinto propietario, diferente programación de snapshots, diferente compresión, diferente cuota, etc. En caso de duda, normalmente es mejor utilizar más datasets que menos.
 
+<img width="339" height="404" alt="image" src="https://github.com/user-attachments/assets/a8cce3e4-ff8b-45b7-b237-9f679aa47bc9" />
+
+### Zvol
+
+Un volumen ZFS (zvol) es un conjunto de datos que representa un dispositivo de bloques o una unidad de disco virtual. TrueNAS requiere un zvol al configurar recursos compartidos iSCSI . Agregar una máquina virtual también crea un zvol para su uso como almacenamiento.
+
+<img width="306" height="580" alt="image" src="https://github.com/user-attachments/assets/5b655b9a-79b2-4b56-8d36-4ecd0da328a4" />
+
+
 ### Snapshots (instantáneas)
 
 Una de las características más útiles de ZFS son las **instantáneas (*snapshots*)**. Un snapshot es el estado de un dataset en el momento en que se tomó la instantánea. Como ZFS utiliza el mecanismo **copy-on-write (COW)**, los snapshots son «gratuitos», en el sentido de que es posible tener, en esencia, una cantidad arbitraria de snapshots sin impacto en el rendimiento, aparte del espacio que ocupan las propias instantáneas⁸.
@@ -33,6 +42,8 @@ Los snapshots también pueden **clonarse**. Este proceso crea un nuevo dataset b
 Los snapshots y los clones se utilizan para gestionar **entornos de arranque** en sistemas que arrancan desde ZFS, como FreeNAS, permitiendo revertir fácilmente actualizaciones que hayan salido mal.
 
 Y, lo que es crucial, los snapshots **mitigan eficazmente tanto los ataques de ransomware como muchas formas de error del usuario**. Si se elimina un archivo importante, simplemente se puede restaurar desde el snapshot. Si todo el datas...
+
+
 
 ## Preguntas
 
