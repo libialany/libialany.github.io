@@ -16,6 +16,23 @@ En este ejercicio se configurará la administración de usuarios y grupos en Tru
 
 ![Permisos y ACL](part3/2.png)
 
+## Ejercicio 
+
+Objetivo: Crear un usuario en el grupo lectores, y dar permisos de solo lectura sobre el dataset del Ejercicio 
+
+Paso 1: 
+
+Ir a Credentials → Users → Add:
+Username: <tunombre>_lectura
+Password: <tudecides>
+Auxiliary Groups: agregar lectores
+Shell: nologin (no necesita consola)
+
+Paso 2:
+
+Ir al dataset creado en el Ejercicio 1 -> Edit Permissions (o Permissions en la nueva UI).
+Cambiar el Group Owner a lectores.
+
 **Referencias:**
 
 1. Administración de usuarios y grupos en TrueNAS:

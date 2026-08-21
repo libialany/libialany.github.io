@@ -55,6 +55,17 @@ Los snapshots y los clones se utilizan para gestionar **entornos de arranque** e
 Y, lo que es crucial, los snapshots **mitigan eficazmente tanto los ataques de ransomware como muchas formas de error del usuario**. Si se elimina un archivo importante, simplemente se puede restaurar desde el snapshot. Si todo el datas...
 
 
+## Ejercicio
+
+Objetivo: Crear un dataset dentro de un pool existente.
+
+Configurar:
+- Name: rh-<tu_nombre> 
+- Sync: Standard
+- Compression: dejar en default (lz4/inherit)
+- Dataset Preset: Generic
+
+Revisa el Space Management
 
 ## Preguntas
 
