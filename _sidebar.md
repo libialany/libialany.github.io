@@ -8,3 +8,6 @@
     - [Parte 4 - Uso compartido SMB/NFS](nivel2/parte4)
     - [Parte 5 - Instantáneas y replicación](nivel2/parte5)
     - [Parte 6 - Aplicaciones y contenedores](nivel2/parte6)
+
+  - Vocabulario
+    - [Vocabulario](vocabulario)
