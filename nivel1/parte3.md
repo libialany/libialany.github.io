@@ -3,6 +3,12 @@
 ### Descripción
 
 En este ejercicio se configurará la administración de usuarios y grupos en TrueNAS. Se practicarán la creación de cuentas, asignación de grupos, permisos sobre datasets y control de acceso mediante ACL. El objetivo es aprender a implementar una estructura segura para usuarios y recursos compartidos.
+Secciones que vamos a revisar.
+
+```
+Credentials → Users
+```
+
 
 ### Credenciales
 
@@ -22,7 +28,6 @@ Objetivo: Crear un usuario en el grupo lectores, y dar permisos de solo lectura 
 
 Paso 1: 
 
-Ir a Credentials → Users → Add:
 Username: <tunombre>_lectura
 Password: <tudecides>
 Auxiliary Groups: agregar lectores

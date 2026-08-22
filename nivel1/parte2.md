@@ -14,6 +14,11 @@ Un volumen de ZFS se denomina **pool**. Un pool contiene uno o más **vdevs**, a
 
 <img width="625" height="395" alt="image" src="https://github.com/user-attachments/assets/507f8c8d-4612-4040-8a6c-311b75a618bd" />
 
+Datos del pool:
+
+- Name: rh-<tu_nombre> 
+- Tipo: Stripe
+
 
 - Configuracion
 

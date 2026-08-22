@@ -44,13 +44,13 @@ Paso 1.
 Path: /mnt/tank/rh-<tu_nombre>
 Description: opcional
 Maproot User/Group: dejar vacío para empezar
-Networks/Hosts: si quieren restringir, agregar la subred del laboratorio (ej. 192.168.1.0/24); si no, dejar abierto para el ejercicio
+Networks/Hosts: si quieren restringir.
 
 Paso 2.
 
 ```
-   sudo mkdir -p /mnt/prueba
-   sudo mount -t nfs <ip_truenas>:/mnt/tank/workshop-<tu_nombre> /mnt/prueba
+   sudo mkdir -p /tmp/prueba
+   sudo mount -t nfs 10.64.2.81:/mnt/tank/dataset01RH /tmp/prueba
 ```
 
 

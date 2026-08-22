@@ -32,7 +32,7 @@ Instala la aplicacion Photo prism.
 
 Storage Configuration:
 
-Storage / Originals Path → seleccionar Host Path y apuntar al dataset del Ejercicio 1 (/mnt/tank/rh-<tu_nombre>), o crear una subcarpeta photos dentro de él
+Storage: seleccionar Host Path y apuntar al dataset del Ejercicio 1 (/mnt/tank/rh-<tu_nombre>), o crear una subcarpeta photos dentro de él
 
 Storage Path (config/db de la app) → puede ir en un dataset separado o subcarpeta photoprism-config dentro del mismo dataset
 

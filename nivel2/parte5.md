@@ -25,16 +25,20 @@ Objetivo: Crear una snapshot y replicarla hacia otro TrueNAS.
 
 1. Crear a Snapshot de un dataset.
 
+2. credentials del backup. 
+
 2. Data Protection → Replication Tasks → Add (el asistente crea automáticamente la SSH connection si no existe):
    
    Source: dataset del Ejercicio 1
    
-   Destination: sistema remoto + dataset destino
+   Destination: dataset destino
    
    Transport: SSH (dejar que el wizard genere/instale la clave SSH automáticamente)
    
    Schedule: "Run Once" para el ejercicio (o cada 5 min si quieren verlo en vivo)
    
+   Seleccionar Snapshot: auto-2026-08-XX_ZZ-XX
+
    Ejecutar la tarea manualmente (Run Now).
 
 **Slave TrueNAS**
@@ -42,7 +46,6 @@ Objetivo: Crear una snapshot y replicarla hacia otro TrueNAS.
 1. Crear un pool/dataset destino vacío para recibir la réplica.
 
 2. revisar Storage → Pools y confirmar que el dataset replicado apareció con los datos.
-
 
 
 **Referencias:**
