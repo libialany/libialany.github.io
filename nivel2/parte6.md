@@ -28,6 +28,10 @@ En este ejercicio se explorará la ejecución de aplicaciones en TrueNAS mediant
 
 Instala la aplicacion Photo prism.
 
+<img width="1120" height="409" alt="image" src="https://github.com/user-attachments/assets/b2bbe48c-08d7-4dce-8db5-9aa5dd868d96" />
+
+
+
 **Puntos importantes.** 
 
 Storage Configuration:
